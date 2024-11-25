@@ -12,15 +12,15 @@ ESP-NOWでブロードキャストやマルチキャストで通信を行うた�
 ![image](https://github.com/user-attachments/assets/030904a5-3bd3-4bb5-8ccc-7ca37bac8f4e)
 
 送信元のデバイスに本プログラムを実装します．
-実装したら下記のコマンドで実行できます．
+実装したらexecfile("broadcast.py")で実行できます．
 
-```
-execfile("broadcast.py")
-```
+![image](https://github.com/user-attachments/assets/508e991a-6705-4313-8d48-dfa6a01cf643)
+
 
 受信側には以下のように受信したデータが表示されます．
 
-![image](https://github.com/user-attachments/assets/aa06028a-5fb9-498a-90ad-4b91cbf6f77c)
+![image](https://github.com/user-attachments/assets/d4e14da3-2170-4c95-9f29-acdecb4cba67)
+
 
 ## multicast.py
 
@@ -31,13 +31,18 @@ execfile("broadcast.py")
 この図では赤色のデバイスを送信対象としています．
 送信元のデバイスに本プログラムを実装します．
 mac1，mac2の部分は送信先のESP32のmacアドレスに変更してください．
-実装したら下記のコマンドで実行できます．
-```
-execfile("broadcast.py")
-```
+実装したらexecfile("multicast.py")で実行できます．
+
+![image](https://github.com/user-attachments/assets/6871f652-9566-40f4-9083-c5ce01ab8d13)
+
+
 受信側には以下のように受信したデータが表示されます．
 
 ![image](https://github.com/user-attachments/assets/aa06028a-5fb9-498a-90ad-4b91cbf6f77c)
+
+受信対象でないデバイスには何も表示されません．
+
+![image](https://github.com/user-attachments/assets/41948d76-8550-427f-8d69-ae84122ed3e4)
 
 ## receive.py
 
@@ -50,4 +55,9 @@ execfile("receive.py")
 ```
 受信できれば以下のように受信したデータが表示されます．
 
-![image](https://github.com/user-attachments/assets/aa06028a-5fb9-498a-90ad-4b91cbf6f77c)
+![image](https://github.com/user-attachments/assets/d4e14da3-2170-4c95-9f29-acdecb4cba67)
+
+受信できない場合は何も表示されません
+
+![image](https://github.com/user-attachments/assets/41948d76-8550-427f-8d69-ae84122ed3e4)
+
