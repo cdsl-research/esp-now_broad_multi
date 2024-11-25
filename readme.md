@@ -38,7 +38,7 @@ mac1，mac2の部分は送信先のESP32のmacアドレスに変更してくだ�
 
 受信側には以下のように受信したデータが表示されます．
 
-![image](https://github.com/user-attachments/assets/aa06028a-5fb9-498a-90ad-4b91cbf6f77c)
+![image](https://github.com/user-attachments/assets/d4e14da3-2170-4c95-9f29-acdecb4cba67)
 
 受信対象でないデバイスには何も表示されません．
 
@@ -49,10 +49,8 @@ mac1，mac2の部分は送信先のESP32のmacアドレスに変更してくだ�
 ESP-NOWで送信されたデータを受信するプログラムです．
 broadcast.pyで送信されたデータもmulticast.pyで送信されたデータもこのコードで受け取れます．
 送信先のデバイスに本プログラムを実装します．
-実装したら下記のコマンドで実行できます．
-```
-execfile("receive.py")
-```
+実装したらexecfile("receive.py")で実行できます．
+
 受信できれば以下のように受信したデータが表示されます．
 
 ![image](https://github.com/user-attachments/assets/d4e14da3-2170-4c95-9f29-acdecb4cba67)
