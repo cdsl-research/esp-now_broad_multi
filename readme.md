@@ -11,7 +11,7 @@ ESP-NOWでブロードキャストやマルチキャストで通信を行うた�
 
 ![image](https://github.com/user-attachments/assets/030904a5-3bd3-4bb5-8ccc-7ca37bac8f4e)
 
-図の左側のデバイスに本プログラムを実装します．
+送信元のデバイスに本プログラムを実装します．
 実装したら下記のコマンドで実行できます．
 
 ```
@@ -29,7 +29,7 @@ execfile("broadcast.py")
 
 ![image](https://github.com/user-attachments/assets/3cb6a85f-15a0-4b42-bfb8-b4d596fb4522)
 この図では赤色のデバイスを送信対象としています．
-図の左側のデバイスに本プログラムを実装します．
+送信元のデバイスに本プログラムを実装します．
 mac1，mac2の部分は送信先のESP32のmacアドレスに変更してください．
 実装したら下記のコマンドで実行できます．
 ```
@@ -43,7 +43,7 @@ execfile("broadcast.py")
 
 ESP-NOWで送信されたデータを受信するプログラムです．
 broadcast.pyで送信されたデータもmulticast.pyで送信されたデータもこのコードで受け取れます．
-先ほどの図の右側のデバイスに本プログラムを実装します．
+送信先のデバイスに本プログラムを実装します．
 実装したら下記のコマンドで実行できます．
 ```
 execfile("receive.py")
